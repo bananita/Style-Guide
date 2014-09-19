@@ -128,11 +128,14 @@ Some of Apple’s APIs write garbage values to the error parameter (if non-NULL)
 
 ## Methods
 
-In method signatures, there should be a space after the scope (-/+ symbol). There should be a space between the method segments.
+In method signatures, there should be a space after the scope (-/+ symbol). There should be a space between the method segments. Methods with multiple parameters should be divided using newline symbol both when declaring and using the method. All colons should be in the one column.
 
 **For Example**:
 ```objc
-- (void)setExampleText:(NSString *)text image:(UIImage *)image;
+- (void)setExampleText:(NSString *)text 
+                 image:(UIImage *)image;
+[self setExampleText:@"example"
+               image:image];
 ```
 ## Variables
 
